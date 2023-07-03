@@ -1,0 +1,15 @@
+.root-main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.content{
+    display: flex;
+    margin-right: 78%;
+    margin-left: -11px;
+    gap: 10px;
+    
+}
