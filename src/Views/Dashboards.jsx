@@ -1,8 +1,9 @@
 import React from 'react'
+import '../Styles/DashBoards.css'
 
 const DashBoards = () => {
   return (
-    <div><h1>DASHBOARDS</h1></div>
+    <div>Dashboard</div>
   )
 }
 
