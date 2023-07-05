@@ -13,7 +13,7 @@ import {BsFillArrowRightCircleFill} from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 import '../Styles/Sidebar.css'
 import Header from './Header'
-import Footer from './Footer';
+
 
 
 const Sidebar = ({children}) => {

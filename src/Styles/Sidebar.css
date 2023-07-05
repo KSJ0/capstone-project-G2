@@ -1,25 +1,21 @@
 
 
 .container{
-    position: absolute;
+    margin: 0;
     display: flex;
-    
-    
-    
-    
+    margin-right: 0;
+    width: max-content;
    
     
 }
 
 main{
-    width: 100%;
-    padding: 10px;
+    
     padding-top: 20px;
     padding-left: 40px;
-
+    
     
   
-    
 }
 
 .sidebar{
@@ -29,6 +25,7 @@ main{
     height: 93.7vh;
     transition: all 0.5s;
     margin-left: -12px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     
 }
 .top_section{
@@ -49,7 +46,7 @@ main{
     color: #000000;
     padding: 10px 15px;
     gap: 15px;
-    transition: all 0.5s;
+    transition: all 0.3s;
     text-decoration: none;
     top: 100px;
 }
