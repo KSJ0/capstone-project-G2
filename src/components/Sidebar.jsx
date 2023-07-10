@@ -10,7 +10,7 @@ import {
 }from "react-icons/fa";
 
 import {BsFillArrowRightCircleFill} from "react-icons/bs";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../Styles/Sidebar.css'
 import Header from './Header'
 
@@ -26,34 +26,34 @@ const Sidebar = ({children}) => {
             icon:<FaTh/>
         },
         {
-            path:"/UserManagements",
+            path:"/userManagements",
             name:"UserManagements",
             icon:<FaUserAlt/>
         },
         {
-            path:"/Products",
+            path:"/products",
             name:"Products",
             icon:<FaShoppingBag/>
         },
         {
-            path:"/Stocks",
+            path:"/stocks",
             name:"Stocks",
             icon:<FaBox/>
         },
         {
-            path:"/Sales",
+            path:"/sales",
             name:"Sales",
             icon:<FaRegChartBar/>
         },
 
         {
-            path:"/Reports",
+            path:"/reports",
             name:"Reports",
             icon:<FaRegCalendarCheck/>
         },
 
         {
-            path:"/Email",
+            path:"/email",
             name:"Email",
             icon:<FaCommentAlt/>
         },
@@ -76,10 +76,10 @@ const Sidebar = ({children}) => {
             
             {
                 menuItem.map((item, index)=>(
-                    <NavLink to={item.path} key={index} className="link" activeclassName="active">
+                    <Link to={item.path} key={index} className="link" activeclassName="active">
                         <div className="icon">{item.icon}</div>
                         <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
-                    </NavLink>
+                    </Link>
                 ))
             }
              

@@ -37,6 +37,7 @@ const Cards = () => {
             value: '90'
         
         },
+     
     ])
   return (
     <div className='Cards'>

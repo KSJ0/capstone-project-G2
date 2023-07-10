@@ -6,14 +6,10 @@ import Stocks from './Pages/Stocks'
 import Sales from './Pages/Sales'
 import Reports from './Pages/Reports'
 import DashBoards from './Views/Dashboards'
-
 import Email from './Pages/Email'
 import Sidebar from './components/Sidebar'
-
-
-
-
-
+import Stockadd from './components/Stockscomponents/Stockadd'
+import UpdateStocks from '../src/components/Stockscomponents/UpdateStocks'
 
 
 
@@ -26,12 +22,15 @@ const App = () => {
     <Sidebar>
    <Routes>
     <Route path='/' element={<DashBoards/>}/>
-    <Route path='/UserManagements' element={<UserManagements/>}/>
-    <Route path='/Products' element={<Products/>}/>
-    <Route path='/Stocks' element={<Stocks/>}/> 
-    <Route path='/Sales' element={<Sales/>}/> 
-    <Route path='/Reports' element={<Reports/>}/> 
-    <Route path='/Email' element={<Email/>}/> 
+    <Route path='/userManagements' element={<UserManagements/>}/>
+    <Route path='/products' element={<Products/>}/>
+    <Route path='/stocks' element={<Stocks/>}/> 
+    <Route path='/sales' element={<Sales/>}/> 
+    <Route path='/reports' element={<Reports/>}/> 
+    <Route path='/email' element={<Email/>}/>
+    <Route path='/addstocks' element={<Stockadd/>}/>
+    <Route path='/update/:carID' element={<UpdateStocks/>}/>
+   
    </Routes>
    </Sidebar>
   
